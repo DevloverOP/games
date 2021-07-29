@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Loc</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;padding: 0;
+        }
+    #container{
+     border: 2px solid black;
+     width: 300px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     
+    }
+    p{
+     font-size: 1.2em;
+     width: fit-content;
+     margin-bottom: 10px;
+    }
+    button{
+        margin-top: 10px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>hello loc</h1>  
+    <div id="container">
+    <p id="lat">Latitude</p>
+    <p id="long">Longitude</p>
+    <button id="loc">Get Location</button>
+    </div>  
+    <script src="./script.js"></script>
+</body>
+</html>
