@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRUSTY-FI</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: rgb(243, 223, 223);
+      }
+      h1 {
+        text-align: center;
+        color: purple;
+        margin:30px auto;
+        text-shadow: 5px 5px 8px red;
+      }
+      #container {
+        box-shadow: 0px 0px 5px 2px grey;
+        background-color: white;
+        width: 300px;
+        height: fit-content;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      #container p{
+        font-weight: bold;
+      }
+      #container input,#secret,p {
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      :is(#container input,#secret):focus {
+        box-shadow: 0px 0px 2px 1px blue;
+        border: none;
+        outline-style: none;
+      }
+      #container #submit {
+        background-color: orange;
+        font-weight: bold;
+      }
+      #result {
+        display: none;
+        background-color: #cf1717;
+        color: white;
+        padding: 10px;
+        width: 300px;
+        margin: 20px auto;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TRUSTY-FI</h1>
+    <form id="container">
+      <p>Enter your Crush's or Partner's full name in secret Box and remember their face before Submit,You will get them SOON. let's see how much they are interested in You.</p>
+      <input type="text" id="name" placeholder="Enter your Name" required />
+      <input type="text" id="age" placeholder="Enter your Age" required />
+      <textarea id="secret" rows="5" placeholder="Secret BOX"></textarea>
+      <input type="submit" id="submit" />
+    </form>
+    <div id="result"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
